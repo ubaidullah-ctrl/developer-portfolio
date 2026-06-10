@@ -3,7 +3,7 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 const contacts = [
 	{
 		id: 1,
-		name: 'Pécs, Hungary',
+		name: 'Germany',
 		icon: <FiMapPin />,
 		href: null
 	},
