@@ -10,8 +10,8 @@ The portfolio positions Ubaid as a Full-Stack Developer working with React, Type
 
 ## Main Sections
 
-- Professional hero and direct calls to action
-- Four selected projects
+- Editorial hero with a custom identity and original portrait
+- Four selected projects with project-specific artwork
 - Reusable, detailed case-study pages
 - Professional experience
 - Technical capabilities
@@ -29,7 +29,7 @@ The portfolio positions Ubaid as a Full-Stack Developer working with React, Type
 
 ## Selected Project Notes
 
-- The Adaptive AI Learning Companion is presented through a case study because no public source repository is currently available.
+- The Adaptive AI Learning Companion links to its public, sanitised source repository and describes semantic verification without presenting the current implementation as complete RAG.
 - The BitNorm job-board case study is anonymised and excludes private code, internal URLs, customer information, and confidential architecture.
 - The e-commerce project is identified as an adaptation; its README documents the original source and verified maintenance work.
 - The AI Link Summarizer is identified as an adaptation; its README preserves attribution and documents its server-side credential fix.
@@ -79,14 +79,14 @@ The portfolio has no runtime secrets or application-specific environment variabl
 - Skip link and visible focus styles
 - Descriptive image alternative text
 - Reduced-motion support
-- Sufficient color contrast and responsive layouts
+- Sufficient colour contrast and responsive layouts
 - Stable image dimensions to reduce layout shift
 
 ## Current Limitations
 
 - The project uses the legacy React Scripts 4 toolchain and should eventually migrate through a separately reviewed upgrade.
-- Additional authentic screenshots are still needed for the anonymised job-board case study.
-- The CV download is temporarily removed until a current version is reviewed and approved.
+- The anonymised job-board case study deliberately uses original editorial interface artwork rather than confidential product screenshots.
+- The CV download remains removed until the technical wording is aligned with the public evidence.
 
 ## License
 

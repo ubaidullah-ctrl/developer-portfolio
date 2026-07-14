@@ -30,7 +30,7 @@ export default function CaseStudy() {
 				<p className="case-intro">{project.overview}</p>
 				<ul className="tag-list">{project.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul>
 				<div className="case-actions">
-					{project.source && <a className="button secondary-button" href={project.source} target="_blank" rel="noreferrer">View Source Code <span aria-hidden="true">↗</span></a>}
+					{project.source && <a className="button secondary-button" href={project.source} target="_blank" rel="noreferrer">View source code <span aria-hidden="true">↗</span></a>}
 				</div>
 			</header>
 			<div className="shell case-media"><ProjectPreview project={project} /></div>

@@ -1,14 +1,14 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#F4F7F4"/>
-  <rect x="70" y="70" width="1060" height="490" rx="28" fill="#FFFFFF" stroke="#DCE5DF" stroke-width="2"/>
-  <rect x="112" y="112" width="68" height="68" rx="34" fill="#176B4C"/>
-  <text x="146" y="154" fill="white" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="700">UU</text>
-  <text x="112" y="253" fill="#176B4C" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="3">FULL-STACK DEVELOPER</text>
-  <text x="112" y="339" fill="#15251F" font-family="Arial, sans-serif" font-size="58" font-weight="700">Ubaid Ullah</text>
-  <text x="112" y="410" fill="#4E6058" font-family="Arial, sans-serif" font-size="31">Reliable web products and AI-enabled applications</text>
-  <text x="112" y="487" fill="#176B4C" font-family="Arial, sans-serif" font-size="23">React · TypeScript · Python · FastAPI · PostgreSQL · RAG</text>
-  <path d="M1006 126V504" stroke="#DCE5DF" stroke-width="2"/>
-  <circle cx="1006" cy="186" r="13" fill="#176B4C"/>
-  <circle cx="1006" cy="315" r="13" fill="#8AB49F"/>
-  <circle cx="1006" cy="444" r="13" fill="#C7D9CF"/>
+  <rect width="1200" height="630" fill="#F4F0E8"/>
+  <path d="M0 78H1200M0 552H1200M78 0V630M1122 0V630" stroke="#C9C3B9"/>
+  <rect x="78" y="78" width="1044" height="474" fill="#FFFDF8" stroke="#11191D" stroke-width="2"/>
+  <rect x="118" y="118" width="72" height="72" rx="12" fill="#11191D"/>
+  <path d="M136 137v20c0 9 6 14 14 14 9 0 15-5 15-14v-20" stroke="#F4F0E8" stroke-width="6"/>
+  <path d="m168 132-26 46" stroke="#FF4F1F" stroke-width="6"/>
+  <text x="118" y="280" fill="#FF4F1F" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">FULL-STACK DEVELOPER / PRODUCT ENGINEER</text>
+  <text x="118" y="372" fill="#11191D" font-family="Arial, sans-serif" font-size="68" font-weight="700">Ubaid Ullah</text>
+  <text x="118" y="434" fill="#5F625E" font-family="Arial, sans-serif" font-size="28">Interface → API → data → AI-enabled workflows</text>
+  <rect x="118" y="476" width="466" height="2" fill="#FF4F1F"/>
+  <text x="118" y="514" fill="#11191D" font-family="monospace" font-size="18">React · TypeScript · Python · FastAPI · PostgreSQL</text>
+  <text x="1010" y="491" fill="#FF4F1F" font-family="Arial, sans-serif" font-size="116" font-weight="700" text-anchor="end">U/</text>
 </svg>

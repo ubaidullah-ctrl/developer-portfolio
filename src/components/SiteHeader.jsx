@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import BrandMark from './BrandMark';
 
 const nav = [
 	['Work', '/#work'],
@@ -19,21 +20,15 @@ export default function SiteHeader() {
 			<a className="skip-link" href="#main-content">Skip to content</a>
 			<div className="shell header-inner">
 				<Link className="brand" to="/" aria-label="Ubaid Ullah, home">
-					<span className="brand-mark" aria-hidden="true">UU</span>
-					<span>Ubaid Ullah</span>
+					<BrandMark className="brand-mark" />
+					<span className="brand-name">Ubaid Ullah <small>Full-Stack Developer</small></span>
 				</Link>
-				<button
-					className="menu-button"
-					type="button"
-					aria-expanded={open}
-					aria-controls="primary-navigation"
-					onClick={() => setOpen((value) => !value)}
-				>
+				<button className="menu-button" type="button" aria-expanded={open} aria-controls="primary-navigation" onClick={() => setOpen((value) => !value)}>
 					<span className="sr-only">Toggle navigation</span>
 					<span aria-hidden="true">{open ? 'Close' : 'Menu'}</span>
 				</button>
 				<nav id="primary-navigation" className={open ? 'nav-links is-open' : 'nav-links'} aria-label="Primary navigation">
-					{nav.map(([label, href]) => <a key={label} href={href}>{label}</a>)}
+					{nav.map(([label, href], index) => <a key={label} href={href}><span>0{index + 1}</span>{label}</a>)}
 				</nav>
 			</div>
 		</header>

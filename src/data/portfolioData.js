@@ -1,5 +1,7 @@
-import ecommerceImage from '../images/web-project-1.jpg';
-import summarizerImage from '../images/summarizer-screenshot.png';
+import adaptiveImage from '../images/adaptive-learning-cover.jpg';
+import ecommerceImage from '../images/ecommerce-cover.jpg';
+import jobBoardImage from '../images/job-board-cover.jpg';
+import summarizerImage from '../images/summarizer-interface.jpg';
 
 export const profileLinks = {
 	email: 'mailto:ubaidullah3048@gmail.com',
@@ -17,7 +19,8 @@ export const projects = [
 		contribution:
 			'Built the document pipeline, AI generation and semantic verification services, adaptive quiz workflow, API, persistence layer, analytics, and product interface.',
 		technologies: ['Next.js', 'React', 'JavaScript', 'Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'Gemini'],
-		preview: 'architecture',
+		image: adaptiveImage,
+		imageAlt: 'Editorial illustration of a document becoming study cards, a quiz, and progress insights',
 		accent: 'AI / Semantic verification',
 		source: 'https://github.com/ubaidullah-ctrl/adaptive-learning-companion',
 		overview:
@@ -85,7 +88,8 @@ export const projects = [
 		contribution:
 			'Delivered React workflows and FastAPI endpoints across discovery, filtering, preferences, saved jobs, and recommendation requests.',
 		technologies: ['React', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'REST APIs', 'Git', 'GitHub'],
-		preview: 'jobboard',
+		image: jobBoardImage,
+		imageAlt: 'Editorial illustration of job search filters, role cards, saved jobs, and recommendation insights',
 		accent: 'Professional work',
 		overview:
 			'An anonymised professional case study covering full-stack product work delivered at BitNorm. Private code, internal URLs, customer data, and confidential architecture are intentionally excluded.',
@@ -133,14 +137,14 @@ export const projects = [
 		summary:
 			'An electronics commerce platform covering product discovery, accounts, cart, wishlist, checkout, orders, and administrative operations.',
 		contribution:
-			'Built an individual full-stack project spanning the Next.js storefront, authentication, stateful shopping workflows, database access, and admin tools.',
+			'Maintained and extended an open-source Next.js commerce application, debugging authentication and redirects, improving Prisma setup and data hygiene, and hardening exposed routes.',
 		technologies: ['Next.js 14', 'TypeScript', 'React', 'Tailwind CSS', 'NextAuth', 'Prisma', 'MySQL', 'Zustand', 'Express'],
 		image: ecommerceImage,
-		imageAlt: 'Electronics e-commerce storefront interface',
+		imageAlt: 'Editorial illustration of an electronics catalogue, cart, order tracking, and admin inventory',
 		accent: 'Commerce platform',
 		source: 'https://github.com/ubaidullah-ctrl/full-stack-ecommerce-platform',
 		overview:
-			'An individual end-to-end commerce build with customer-facing shopping flows and an administrative dashboard. The technology stack has been verified from the local repository.',
+			'An adapted open-source commerce application with customer-facing shopping flows and an administrative dashboard. My work focused on debugging, configuration, data integrity, security cleanup, and maintainability.',
 		problem:
 			'An electronics catalogue needs connected discovery, account, purchase, and administration workflows rather than a collection of disconnected product pages.',
 		users: 'Customers browsing and purchasing electronics, and administrators managing catalogue and order data.',
@@ -193,10 +197,10 @@ export const projects = [
 		summary:
 			'A responsive web application that accepts article URLs and returns concise AI-generated summaries.',
 		contribution:
-			'Built the URL workflow, asynchronous summary request states, error feedback, result presentation, and persistent local history.',
+			'Adapted and hardened an open-source Next.js summarizer, including request-state handling, local history, validation, error feedback, and a server-side API proxy for the third-party key.',
 		technologies: ['Next.js 14', 'React', 'Redux Toolkit', 'RTK Query', 'Tailwind CSS', 'RapidAPI', 'Local Storage'],
 		image: summarizerImage,
-		imageAlt: 'AI Link Summarizer URL input and generated summary interface',
+		imageAlt: 'AI Link Summarizer interface showing URL input, saved links, and a generated article summary',
 		accent: 'AI content tool',
 		source: 'https://github.com/ubaidullah-ctrl/ai-link-summarizer',
 		overview:
@@ -206,7 +210,7 @@ export const projects = [
 		users: 'Readers and researchers triaging online articles.',
 		implemented: [
 			'URL input and browser-level validation',
-			'Asynchronous summary requests through RTK Query and RapidAPI',
+			'Asynchronous summary requests through RTK Query and a server-side API route',
 			'Loading and error feedback',
 			'Summary presentation and copy interaction',
 			'Local summary history using browser storage',
@@ -215,7 +219,7 @@ export const projects = [
 		architecture: [
 			'Next.js 14 App Router and React interface',
 			'Redux Toolkit store with RTK Query for request state',
-			'RapidAPI article summarisation endpoint',
+			'Server-only API proxy to the RapidAPI article summarisation endpoint',
 			'Local Storage for client-side result history',
 		],
 		flows: [
@@ -229,14 +233,13 @@ export const projects = [
 		challenges: ['Handling third-party API failures clearly', 'Keeping local history useful without a backend account model'],
 		testing: 'The repository demonstrates the core request and local-history workflow. No automated test suite is present in the inspected project.',
 		limitations: [
-			'The RapidAPI key is passed into client-side configuration and is not safe for a public deployment',
+			'The application still depends on the availability and response quality of a third-party summarisation API',
 			'There is no server-side rate limiting or abuse protection',
-			'Availability depends on a third-party summarisation API',
+			'No automated application test suite is currently present',
 		],
 		future: [
-			'Proxy requests through a server-only route and rotate the exposed credential',
 			'Add rate limiting, timeouts, and production failure handling',
-			'Test the deployed main workflow and mobile layout before adding a Live Demo link',
+			'Add automated coverage for validation, proxy failures, and local-history behaviour',
 		],
 	},
 ];
