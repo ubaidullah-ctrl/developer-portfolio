@@ -1,6 +1,5 @@
 import ProjectCard from '../components/ProjectCard';
 import { capabilities, experience, profileLinks, projects } from '../data/portfolioData';
-import profilePhoto from '../images/profile.jpeg';
 
 export default function Home() {
 	return (
@@ -13,6 +12,7 @@ export default function Home() {
 					<div className="hero-actions">
 						<a className="button primary-button" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
 						<a className="button secondary-button" href={profileLinks.github} target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+						<a className="button quiet-button" href="#contact">Contact <span aria-hidden="true">→</span></a>
 					</div>
 					<div className="hero-proof" aria-label="Portfolio summary">
 						<div><strong>04</strong><span>Selected case studies</span></div>
@@ -20,10 +20,19 @@ export default function Home() {
 						<div><strong>FE · BE · AI</strong><span>Across the stack</span></div>
 					</div>
 				</div>
-				<aside className="portrait-frame" aria-label="Portrait of Ubaid Ullah">
-					<div className="portrait-index">PORTRAIT / 2026</div>
-					<img src={profilePhoto} alt="Ubaid Ullah outdoors" width="900" height="900" />
-					<p><span aria-hidden="true">↳</span> Turning requirements into maintainable, shipped workflows.</p>
+				<aside className="delivery-map" aria-labelledby="delivery-map-title">
+					<div className="delivery-map-header">
+						<p className="eyebrow">Engineering scope</p>
+						<span>01—04</span>
+					</div>
+					<h2 id="delivery-map-title">One connected delivery path.</h2>
+					<ol className="delivery-steps">
+						<li><span>01</span><div><strong>Product interface</strong><small>React · TypeScript · Next.js</small></div></li>
+						<li><span>02</span><div><strong>Service boundary</strong><small>Python · FastAPI · REST APIs</small></div></li>
+						<li><span>03</span><div><strong>Data workflow</strong><small>PostgreSQL · SQL · pgvector</small></div></li>
+						<li><span>04</span><div><strong>AI capability</strong><small>Embeddings · Vector search · Verification</small></div></li>
+					</ol>
+					<p className="delivery-note"><span aria-hidden="true">↳</span> From product requirement to a maintainable, testable workflow.</p>
 				</aside>
 			</section>
 
