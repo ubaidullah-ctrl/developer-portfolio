@@ -9,7 +9,7 @@ export default function Home() {
 				<div className="hero-copy">
 					<p className="eyebrow"><span>Based in Europe</span><span>Available for product teams</span></p>
 					<h1 id="hero-title">I build the <em>whole product</em>—from interface to API.</h1>
-					<p className="hero-lede">Full-stack developer working across React, TypeScript, Next.js, Python, FastAPI, and PostgreSQL—plus practical AI features that stay connected to real product workflows.</p>
+					<p className="hero-lede">Full-stack developer working across React, TypeScript, Next.js, Python, FastAPI, and PostgreSQL—building AI-enabled applications with embeddings, vector search, and semantic verification.</p>
 					<div className="hero-actions">
 						<a className="button primary-button" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
 						<a className="button secondary-button" href={profileLinks.github} target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -74,7 +74,7 @@ export default function Home() {
 					<div><p className="eyebrow">04 / About</p><h2 id="about-title">Building complete products, not isolated screens.</h2></div>
 					<div className="about-copy">
 						<p className="about-lead">I am a full-stack developer focused on reliable web products and practical AI-enabled applications.</p>
-						<p>My work covers React and TypeScript interfaces, Python and FastAPI services, PostgreSQL-backed data flows, REST APIs, embeddings, vector search, and semantic source verification.</p>
+						<p>My work covers React and TypeScript interfaces, Python and FastAPI services, PostgreSQL-backed data flows, REST APIs, and AI-enabled applications with embeddings, vector search, and semantic verification.</p>
 						<p>I enjoy turning product requirements into maintainable interfaces, backend services, database structures, and complete user workflows.</p>
 					</div>
 				</div>
