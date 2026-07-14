@@ -1,45 +1,26 @@
-import { AnimatePresence } from 'framer-motion';
-import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
-import AppFooter from './components/shared/AppFooter';
-import AppHeader from './components/shared/AppHeader';
+import SiteFooter from './components/SiteFooter';
+import SiteHeader from './components/SiteHeader';
 import './css/App.css';
-import UseScrollToTop from './hooks/useScrollToTop';
+import CaseStudy from './pages/CaseStudy';
+import Home from './pages/Home';
 
-const About = lazy(() => import('./pages/AboutMe'));
-const Contact = lazy(() => import('./pages/Contact.jsx'));
-const Home = lazy(() => import('./pages/Home'));
-const Projects = lazy(() => import('./pages/Projects'));
-const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
-
-
-function App() {
+export default function App() {
 	return (
-		<AnimatePresence>
-			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
-				<Router>
-					<ScrollToTop />
-					<AppHeader />
-					<Suspense fallback={""}>
-						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="projects" element={<Projects />} />
-							<Route
-								path="projects/single-project/:id"
-								element={<ProjectSingle />}
-							/>
-
-							<Route path="about" element={<About />} />
-							<Route path="contact" element={<Contact />} />
-						</Routes>
-					</Suspense>
-					<AppFooter />
-				</Router>
-				<UseScrollToTop />
-			</div>
-		</AnimatePresence>
+		<BrowserRouter>
+			<ScrollToTop />
+			<SiteHeader />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/projects" element={<Home />} />
+				<Route path="/about" element={<Home />} />
+				<Route path="/contact" element={<Home />} />
+				<Route path="/work/:slug" element={<CaseStudy />} />
+				<Route path="/projects/single-project/:id" element={<CaseStudy />} />
+				<Route path="*" element={<Home />} />
+			</Routes>
+			<SiteFooter />
+		</BrowserRouter>
 	);
 }
-
-export default App;

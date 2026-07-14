@@ -1,6 +1,6 @@
 {
-  "short_name": "UbaidLab",
-  "name": "Ubaid's Lab",
+  "short_name": "Ubaid Ullah",
+  "name": "Ubaid Ullah | Full-Stack Developer",
   "icons": [
     {
       "src": "ubaid.svg",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#176b4c",
+  "background_color": "#fbfcfa"
 }

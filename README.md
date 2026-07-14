@@ -1,89 +1,93 @@
-# Ubaid's Lab
+# Full-Stack Developer Portfolio
 
-A modern, creative portfolio and project showcase built with React and Tailwind CSS. This site highlights AI-powered tools, e-commerce projects, and web apps by Ubaid, a CS grad passionate about clean code, practical solutions, and a bit of AI magic.
+A responsive portfolio and case-study site presenting Ubaid Ullah’s full-stack product work across modern web interfaces, backend APIs, database workflows, and practical AI applications.
 
-![Ubaid's Lab Logo](./src/images/ubaid-logo.svg)
+![Portfolio social preview](./public/social-preview.svg)
 
-## 🚀 Features
+## Purpose
 
-- Beautiful, responsive design with Tailwind CSS
-- Project gallery with live previews and GitHub links
-- Custom branding, favicon, and creative intro
-- AI, e-commerce, and web app project examples
-- Downloadable resume/CV
-- Dark/light mode toggle
-- Clean, maintainable codebase
+The portfolio positions Ubaid as a Full-Stack Developer working with React, TypeScript, Next.js, Python, FastAPI, PostgreSQL, REST APIs, and applied AI workflows. Project claims are intentionally separated into implemented work, current limitations, and possible improvements.
 
-## 🛠️ Tech Stack
+## Main Sections
 
-- **Frontend:** React, Tailwind CSS, Framer Motion
-- **Icons:** React Icons, SVG
-- **Routing:** React Router
+- Professional hero and direct calls to action
+- Four selected projects
+- Reusable, detailed case-study pages
+- Professional experience
+- Technical capabilities
+- About and Contact sections
 
-## 📂 Project Structure
+## Technology Stack
 
+- React 18
+- React Router 6
+- JavaScript
+- Custom responsive CSS
+- Create React App / React Scripts
+- Jest and Testing Library
+- Vercel static deployment configuration
+
+## Selected Project Notes
+
+- The Adaptive AI Learning Companion is presented through a case study because no public source repository is currently available.
+- The BitNorm job-board case study is anonymised and excludes private code, internal URLs, customer information, and confidential architecture.
+- The e-commerce project is identified as an adaptation; its README documents the original source and verified maintenance work.
+- The AI Link Summarizer is identified as an adaptation; its README preserves attribution and documents its server-side credential fix.
+- No live-demo links are promoted unless the complete production workflow is verified.
+
+## Local Setup
+
+Prerequisites: Node.js and npm.
+
+```bash
+git clone https://github.com/ubaidullah-ctrl/developer-portfolio.git
+cd developer-portfolio
+npm install
+npm start
 ```
-react-tailwindcss-portfolio/
-├── public/
-│   ├── index.html
-│   ├── ubaidlab.svg (favicon)
-│   └── ...
-├── src/
-│   ├── components/
-│   ├── context/
-│   ├── data/
-│   ├── images/
-│   ├── pages/
-│   └── ...
-├── package.json
-└── ...
+
+Open `http://localhost:3000`.
+
+## Quality Commands
+
+```bash
+npm test -- --watchAll=false
+npx --no-install eslint src --ext .js,.jsx
+npm run build
 ```
 
-## 🖼️ Projects Showcased
+The portfolio uses JavaScript, so there is no separate TypeScript type-check command.
 
-1. **Electronic E-commerce Store**  
-   [GitHub](https://github.com/ubaidullah-ctrl/Electronic-Ecommerce-Store)  
-   A full-featured e-commerce platform with admin dashboard, authentication, and real database integration.
+## Production Build and Deployment
 
-2. **Lip Reader A.I**  
-   [GitHub](https://github.com/ubaidullah-ctrl/Lip-Reader-A.I)  
-   An AI-powered visual speech recognition tool that reads lips in real-time using deep learning and computer vision.
+```bash
+npm run build
+```
 
-3. **AI Summarizer**  
-   [GitHub](https://github.com/ubaidullah-ctrl/AI---Summarizer)  
-   A web tool that uses OpenAI GPT-4 to summarize articles and content with a clean, fast UI.
+Vercel is configured to serve the generated `build` directory. `public/_redirects` preserves client-side routes on compatible static hosts.
 
-## ✨ Getting Started
+Live portfolio: [Portfolio Website](https://my-portfolio-website-plum-theta.vercel.app/)
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ubaidullah-ctrl/your-portfolio-repo.git
-   cd your-portfolio-repo
-   ```
-2. **Install dependencies:**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-3. **Start the development server:**
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) to view the site.
+## Environment Variables
 
-## 🖌️ Customization
+The portfolio has no runtime secrets or application-specific environment variables. `.env.production` only provides the legacy Node/OpenSSL compatibility option required by React Scripts 4.
 
-- Update your projects in `src/data/`
-- Change images/logos in `src/images/` and `public/`
-- Edit intro and about text in `src/components/shared/AppBanner.jsx` and `src/data/aboutMeData.js`
+## Accessibility
 
-## 📄 License
+- Semantic heading structure and landmarks
+- Keyboard-accessible responsive navigation
+- Skip link and visible focus styles
+- Descriptive image alternative text
+- Reduced-motion support
+- Sufficient color contrast and responsive layouts
+- Stable image dimensions to reduce layout shift
 
-This project is open source and available under the [MIT License](./LICENSE).
+## Current Limitations
 
----
+- The project uses the legacy React Scripts 4 toolchain and should eventually migrate through a separately reviewed upgrade.
+- Additional authentic screenshots are still needed for the anonymised job-board case study.
+- The CV download is temporarily removed until a current version is reviewed and approved.
 
-> Made with ❤️ by Ubaid. If you like clean code, practical solutions, and a bit of AI magic—let's connect!
+## License
+
+See [LICENSE](./LICENSE).
